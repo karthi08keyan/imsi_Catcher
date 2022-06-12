@@ -49,7 +49,7 @@ cd kalibrate-rtl
 make
 
 sudo make install
-# Installation of IMSI Catcher
+# Installation of IMSI Catcher 
 sudo apt install python-numpy python-scipy python-scapy
 
 git clone https://github.com/Oros42/IMSI-catcher.git
@@ -91,7 +91,7 @@ Authentication Center (AUC)
 The Authentication Center (AUC) handles the authentication process of a subscriber to the network. More specifically, the AUC holds the shared secret key and generates the random challenge that is used to authenticate.
 # How IMSI Catcher works?
 IMSI Catchers are devices that act like fake cell towers, which trick a target’s device to connect to them and then relay the communication to an actual cell tower of the network carrier. The target’s communications in the form of calls, text messages, internet traffic etc. go through the IMSI Catcher, which can read messages, listen to the calls and so on. At the same time victim will have no knowledge that this is happening as everything will seemingly work as normal. This is referred to as Man-In-Middle attacks in security fields.
-
+ now.
 This is possible because of a loophole in GSM protocol. Mobile phones are always looking for the mobile tower with the strongest signal to provide the best commutation. This is usually the nearest one. At the same time, when a device connects to a cell tower, it authenticates to it via an IMSI number. However, the tower doesn’t have to authenticate back. This is why every time someone places a device that acts as a cell tower near your phone, it would connect to it and give away its IMSI.
 
 
